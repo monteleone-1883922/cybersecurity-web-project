@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Test XSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>Echo test</h2>
+<div class="result">
+    <!--#echo var="QUERY_STRING_UNESCAPED" -->
+</div>
+
+<h2>Printenv test</h2>
+<div class="result">
+    <!--#printenv -->
+</div>
+</body>
+</html>
+

