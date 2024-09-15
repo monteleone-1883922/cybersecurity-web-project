@@ -5,6 +5,6 @@
 </head>
 <body>
 <h1>Benvenuto nell'Applicazione Semplice!</h1>
-<p><a href="simple">Vai all'Applicazione</a></p>
+<p>The application is running!!!</p>
 </body>
 </html>
