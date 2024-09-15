@@ -1,1 +1,2 @@
-docker-compose up --build
+echo "starting containers..."
+docker compose up --build
