@@ -7,6 +7,8 @@ RUN pip install flask requests
 # Copia il file Python nell'immagine
 COPY app.py /app/app.py
 
+COPY template-csrf-attack.html /app/
+
 # Imposta la directory di lavoro
 WORKDIR /app
 

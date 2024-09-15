@@ -4,7 +4,7 @@ from flask import Flask, render_template_string
 
 TEMPLATE_FILE = "template-csrf-attack.html"
 OUTPUT_FILE = "csrf-attack.html"
-URL = "http://localhost:8080/manager/"
+URL = "http://tomcat:8080/manager/"
 RE_EXP_CSRF = r'org\.apache\.catalina\.filters\.CSRF_NONCE=([A-F0-9]+)'
 
 app = Flask(__name__)
