@@ -10,4 +10,5 @@ EXPOSE 8080
 # Copia il file WAR nella directory webapps di Tomcat
 COPY dummy-app/target/simple-app-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/
 
-COPY test.xml /usr/local/tomcat/conf/web.xml
+COPY web.xml /usr/local/tomcat/conf/web.xml
+
